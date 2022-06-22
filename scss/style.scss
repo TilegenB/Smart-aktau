@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img {
+    object-fit: contain;
+}
+a {
+    text-decoration: none;
+}
+ul, ol {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+$secondary-color:#212121;
+$white-color:#fff;
+.body {
+    font-family: 'Montserrat','Arial', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.wrapper {
+    padding: 0 25px;
+    max-width: 1125px;
+}
+.stay-home {
+    background-color: $secondary-color;
+    color: $white-color;
+    min-height: 75px;
+    padding: 40px;
+}
+.icon-laptop {
+    display: block;
+    width: 45px;
+    height: 45px;
+    background-image: url(../img/laptop.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
