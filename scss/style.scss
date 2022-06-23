@@ -30,8 +30,15 @@ $white-color:#fff;
 .stay-home {
     background-color: $secondary-color;
     color: $white-color;
-    min-height: 75px;
+    min-height: 55px;
     padding: 40px;
+}
+.stay-home .wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 .icon-laptop {
     display: block;
@@ -40,4 +47,11 @@ $white-color:#fff;
     background-image: url(../img/laptop.svg);
     background-position: center;
     background-repeat: no-repeat;
+
+}
+.stay-home__title {
+    width: 70%;
+}
+.stay-home-list {
+    width: 20%;
 }

@@ -39,8 +39,23 @@ li {
   padding: 40px;
 }
 
+.stay-home .wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .icon-laptop {
+  display: block;
+  width: 45px;
+  height: 45px;
   background-image: url(/laptop.5a61c427.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.stay-home__title {
+  width: 50%;
 }
 
 /*# sourceMappingURL=/style.a6dae8f7.css.map */
