@@ -1,3 +1,7 @@
+$secondary-color:#212121;
+$white-color:#fff;
+$primary-bg-color:#F9F6F1;
+$button-color:#D7B399;
 * {
     box-sizing: border-box;
     margin: 0;
@@ -16,9 +20,16 @@ ul, ol {
 li {
     list-style: none;
 }
-$secondary-color:#212121;
-$white-color:#fff;
-$primary-bg-color:#F9F6F1;
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: $white-color;
+    background-color: $button-color;
+    border: none;
+    padding: 5px 10px;
+}
 .body {
     font-family: 'Montserrat','Arial', sans-serif;
     font-size: 18px;
@@ -26,7 +37,7 @@ $primary-bg-color:#F9F6F1;
 }
 .wrapper {
     padding: 0 25px;
-    max-width: 1125px;
+    width: 1125px;
     margin: 0 auto;
 }
 //!aside
@@ -57,28 +68,82 @@ $primary-bg-color:#F9F6F1;
 
 }
 .stay-home__title {
+    text-align: center;
     padding-left: 20px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;    
+    // flex-grow: 3;
 }
 .stay-home-list {
-    margin-left: 100px;
+    margin-left: auto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    // flex-grow: 1;
+}
+.stay-home__item {
+    text-align: right;
 }
 //!aside end
 //!header
 .header {
     background-color: $primary-bg-color;
+    min-height: 800px;
 }
 //? header-nav
+.header__nav {
+    padding-top: 30px;
+}
 .nav-list{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+}
+.nav__link {
+    display: flex;
+    align-items: center;
+    color: $secondary-color;
 }
 .nav-sub-list {
     display: none;
 }
 .nav__logo {
-    background-image: url(../img/smart-aktau-logo.svg);
+    width: 40px;
+    height: 40px;
+}
+.nav__logo  {
+    margin-right: 10px;
+}
+.nav__logo-text {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
 }
 //? header-nav end
+
+//? slider
+.slider__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.description-list {
+    margin-bottom: 40px;
+}
+.description__item {
+    list-style: auto;
+    list-style-position: inside;
+}
+.descrpiption__button {
+    text-transform: uppercase;
+    width: 240px;
+    min-height: 55px;
+    font-size: 16px;
+    line-height: 20px;
+}
+//? slider end
 //!header end
